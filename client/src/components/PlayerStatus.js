@@ -22,29 +22,42 @@ const PlayerStatus = (props)=>{
             })
     }, [])
 
+    const styling = ()=>{
+        
+    }
+
 
     return(
+    
     <div>
-
-    <div className="flex">
-        
+        <div className="mx-auto flex justify-around">
         {
-            day.map((item, index)=>(
 
-                <div key={index} className="mx-3"
+            day.map((item, index)=>(
+                index == dayIndex?
+                <div key={index} className="text-lg mx-3 underline"
                     onClick={(e)=>{setDayIndex(index)}}>
-                    {item.date}
+                    {item.name}
+                </div>
+
+                :<div key={index} className=" mx-3 "
+                    onClick={(e)=>{setDayIndex(index)}}>
+                    {item.name}
                 </div>
                 
             ))
+
         } 
-{dayIndex}
-    <table className="mt-10 border-4 border-black mx-auto w-80"> 
+    </div>
+
+
+
+    <table className="mt-10 border-4 border-black mx-auto w-4/6"> 
         <tbody className="border-2 border-black">
         
             <tr className="border-2 border-black h-12">
                 <td className="border-2 border-black">Player</td>
-                <td className="border-2 border-black">Actions</td>
+                <td className="border-2 border-black">Availability</td>
             </tr>
             
             {
@@ -63,10 +76,11 @@ const PlayerStatus = (props)=>{
                     </tr>
                 ))
             }
+
         </tbody>
     </table>
 
-    </div>
+
 
 
 
