@@ -8,6 +8,22 @@ import {Router, navigate, Link} from '@reach/router';
 
 const Main = (props)=>{
 
+    const dayArr = [
+        {date:"dayOneStatus", path:"/playerStatus/dayOne"},
+
+        {date:"dayTwoStatus", path:"/playerStatus/dayTwo"},
+
+        {date:"dayThreeStatus", path:"/playerStatus/dayThree"}
+        
+    ]
+
+    const [id, setId] = useState("");
+
+    const [dayIndex, setDayIndex] = useState(0);
+
+    const [day, setDay] = useState(dayArr);
+
+
 
 
     return(
@@ -15,7 +31,7 @@ const Main = (props)=>{
 
             <div className="flex">
                 <h2 onClick={(e)=>navigate('/player')}>Manage Players</h2>
-                <h2>Manage Player Status</h2>
+                <h2 onClick={(e)=>navigate('/playerStatus')}>Manage Player Status</h2>
             </div>
 
 
@@ -28,7 +44,8 @@ const Main = (props)=>{
                 <Router>
                     <ViewAll default />
                     <AddPlayer path="/player"/>
-                    <PlayerStatus path="/playerStatus"/>
+                    
+                    <PlayerStatus path="/playerStatus" id={id} setId={setId} day={day} setDay={setDay} dayIndex={dayIndex} setDayIndex={setDayIndex}/>
                 </Router>
 
             </div>

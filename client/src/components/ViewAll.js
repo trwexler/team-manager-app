@@ -38,8 +38,6 @@ const ViewAll = (props)=>{
                             <td className="border-2 border-black">{player.position}</td>
                             <td className="flex justify-evenly">
 
-                          
-
                             <Delete player={allPlayers} setPlayer={setAllPlayers} id={player._id}/>
 
                         

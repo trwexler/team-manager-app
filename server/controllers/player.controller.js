@@ -51,8 +51,7 @@ viewOnePlayer : (request, response) => {
 updatePlayer : (request, response) => {
     Player.findByIdAndUpdate(request.params.id, request.body,
         {
-        new: true, 
-        runValidators:true,
+        new: true
     })
         .then((updatedPlayer)=> {
             console.log(updatedPlayer);
