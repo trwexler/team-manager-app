@@ -23,7 +23,7 @@ const ViewAll = (props)=>{
 
     return(
         <div>
-            <table className=" mt-3 border-4 border-black mx-auto w-80"> 
+            <table className=" my-12 border-4 border-black mx-auto w-80 "> 
             <tbody className="border-2 border-black">
                 <tr className="border-2 border-black h-12">
                     <td className="border-2 border-black">Player</td>

@@ -150,7 +150,7 @@ const StatusButton = (props) => {
             onClick={editStatus}
             name="Playing"
             value="Playing" 
-            className=" bg-green-200 p-2 mt-2 mx-1 
+            className="cursor-pointer bg-green-200 p-2 mt-2 mx-1 
             border-4 border-black w-26 rounded" >
             Playing
         </button>
@@ -159,7 +159,7 @@ const StatusButton = (props) => {
             onClick={editStatus}
             name="Playing"
             value="Playing" 
-            className="p-2 mt-2 mx-1  border-black w-26 rounded" >
+            className="cursor-pointer p-2 mt-2 mx-1  border-black w-26 rounded" >
             Playing
         </button>
 }
@@ -171,7 +171,7 @@ const StatusButton = (props) => {
             onClick={editStatus}
             name="Not Playing"
             value="Not Playing" 
-            className=" bg-red-200 p-2 mt-2 mx-1 
+            className="cursor-pointer bg-red-200 p-2 mt-2 mx-1 
             border-4 border-black w-26 rounded" >
             Not Playing
         </button>
@@ -180,7 +180,7 @@ const StatusButton = (props) => {
             onClick={editStatus}
             name="Not Playing"
             value="Not Playing" 
-            className="p-2 mt-2 mx-1 border-black w-26 rounded" >
+            className="cursor-pointer p-2 mt-2 mx-1 border-black w-26 rounded" >
             Not Playing
         </button>
 
@@ -193,7 +193,7 @@ const StatusButton = (props) => {
             onClick={editStatus}
             name="Undecided"
             value="Undecided" 
-            className=" bg-yellow-200 p-2 mt-2 mx-1 
+            className="cursor-pointer bg-yellow-200 p-2 mt-2 mx-1 
             border-4 border-black w-26 rounded" >
             Undecided
         </button>
@@ -202,7 +202,7 @@ const StatusButton = (props) => {
             onClick={editStatus}
             name="Undecided"
             value="Undecided" 
-            className="p-2 mt-2 mx-1 border-black w-26 rounded" >
+            className="cursor-pointer p-2 mt-2 mx-1 border-black w-26 rounded" >
             Undecided
         </button>
 } 

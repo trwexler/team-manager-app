@@ -35,12 +35,12 @@ const PlayerStatus = (props)=>{
 
             day.map((item, index)=>(
                 index == dayIndex?
-                <div key={index} className="text-lg mx-3 underline"
+                <div key={index} className="cursor-pointer text-lg mx-3 underline"
                     onClick={(e)=>{setDayIndex(index)}}>
                     {item.name}
                 </div>
 
-                :<div key={index} className=" mx-3 "
+                :<div key={index} className="cursor-pointer  mx-3 "
                     onClick={(e)=>{setDayIndex(index)}}>
                     {item.name}
                 </div>

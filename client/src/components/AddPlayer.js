@@ -66,14 +66,21 @@ const AddPlayer = (props)=>{
 
 
     return(
-        <div>
-            <form onSubmit={submitHandler}>
-                <label htmlFor="">Name:</label>
-                <input type="text" name="name" onChange={inputChange}/>
+        <div className="h-full">
+            <form onSubmit={submitHandler} className="h-60 pt-6">
 
-                <label htmlFor="">Position:</label>
+                <div className="w-1/2 mx-auto">
+                <label className="text-lg" htmlFor="">Name:</label>
+                <br/>
+                <input className=" mb-4 mx-1 border-2 w-3/5" type="text" name="name" onChange={inputChange}/>
+                </div>
 
-                <select 
+                <p></p>
+
+                <div className="w-1/2 mx-auto ">
+                <label className="text-lg" htmlFor="">Position:</label>
+                <br/>
+                <select className=" mx-1 border-2 w-3/5 cursor-pointer"  
                 name="position"
                 value={player.position}
                 onChange={inputChange}
@@ -92,8 +99,8 @@ const AddPlayer = (props)=>{
 
 
                 </select>
-
-                <button>Add</button>
+                </div>
+                <button className="border-2 mt-4 p-2">Add</button>
 
             </form>
         </div>
