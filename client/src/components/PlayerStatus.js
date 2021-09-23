@@ -8,7 +8,6 @@ const PlayerStatus = (props)=>{
 
     const {day, setDay, dayIndex, setDayIndex} = props;
     const [allPlayers, setAllPlayers] = useState([]);
-           
 
     useEffect(()=>{
         axios.get('http://localhost:8000/api')
@@ -21,11 +20,6 @@ const PlayerStatus = (props)=>{
                 console.log(err);
             })
     }, [])
-
-    const styling = ()=>{
-        
-    }
-
 
     return(
     
@@ -46,7 +40,6 @@ const PlayerStatus = (props)=>{
                 </div>
                 
             ))
-
         } 
     </div>
 
@@ -70,7 +63,7 @@ const PlayerStatus = (props)=>{
                         </td>
                         
                         <td className="flex justify-evenly">
-                            <StatusButton day={day} setDayIndex={setDayIndex} dayIndex={dayIndex}player={player}/>
+                            <StatusButton day={day} setDayIndex={setDayIndex} dayIndex={dayIndex} player={player}/>
                         </td>
 
                     </tr>

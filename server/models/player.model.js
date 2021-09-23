@@ -26,19 +26,6 @@ const PlayerSchema = new mongoose.Schema({
         ]
     },
 
-    day: { 
-        type: Number,
-        // required: [
-        //     true,
-        //     "Position is required!"
-        // ],
-        enum: [
-            0,
-            1,
-            2
-        ]
-    },
-
     dayOneStatus: {
         type: String,
         default:"Undecided",

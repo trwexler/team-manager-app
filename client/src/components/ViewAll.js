@@ -39,8 +39,6 @@ const ViewAll = (props)=>{
                             <td className="flex justify-evenly">
 
                             <Delete player={allPlayers} setPlayer={setAllPlayers} id={player._id}/>
-
-                        
                             
                             </td>
 
